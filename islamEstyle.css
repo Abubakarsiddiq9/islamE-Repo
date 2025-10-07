@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    user-select: none;
+}
+body {
+  font-family: "Roboto", sans-serif;;
+  font-size: 20px;
+  
+}
+
+h1, h2, h3 {
+  font-weight: 700; /* Bold for headings */
+}
+
+p {
+  font-weight: 400; /* Normal for text */
+}
+
+.emphasis {
+  font-style: italic; /* Use Roboto italic */
+}
+
+/* Sider Style ********************************************/
+.mainSideBody{
+  background-color: rgb(228, 228, 228);
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+}
+.logoSection{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 20px;
+}
+.logo{
+  width: 70px;
+}
+.logoName{
+  width: 120px;
+}
+.discover, .library{
+  padding: 20px;
+  }
+.discover a, .library a{
+  margin-top: 15px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+/* MainBody Style ***********************************************************/
+.mainBody{
+  margin-left: 250px;
+  height: auto;
+  padding: 35px;
+}
+/* Header***** */
+.headerDiv{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/* search** */
+.search-box {
+      display: flex;
+      align-items: center;
+      border: 2px solid #696969;
+      border-radius: 25px;
+      padding: 5px 10px;
+      width: 400px;
+      height: 42px;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      flex: 1;
+      font-size: 16px;
+      padding: 8px;
+    }
+
+    .search-box button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .search-box img {
+      width: 20px;
+      height: 20px;
+    }
+    .profileLogo img{
+      width: 45px;
+    }
+
+/* Scholars *************/
+.ScholarList{
+  display: flex;
+   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+  margin-top: 10px;
+}
+@media (max-width: 800px) {
+  .ScholarList {
+    flex: 1 1 ; /* 2 columns */
+  }
+}
+
+@media (max-width: 500px) {
+  .ScholarList > div {
+    flex: 1 1 calc(100% - 10px); /* 1 column */
+  }
+}
+
+.ScholarList div{
+  width: 160px;
+  transition: transform 0.3s ease-in-out; /* smooth animation */
+  cursor: pointer;
+}
+.ScholarList img{
+  width: 150px;
+  height: 200px;
+   object-fit: cover;
+  border-radius: 10px;
+  
+}
+.ScholarList div:hover {
+  transform: scale(1.05); /* zoom in 20% */
+}
+.ScholarList div:active {
+  transform: scale(1);
+}
+
+/* Mufti Menk class*************** */
+.mtMenkBio{
+  height: 300px;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  align-items: center;
+}
+.mtMenkBio img{
+  border-radius: 10px;
+}
+.mtMenkBio p{
+  margin-top: 10px;
+  margin-bottom: 11px;
+  font-style: italic;
+  font-size: 22px;
+}
+.mediaLinks{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+.mediaLinks a:hover {
+  color: #1da1f2;  /* example: Twitter blue */
+  transform: translateY(-1px); /* lift effect */
+}
+/* vdoooossss********* */
+.mtMenkVdos{
+   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+.myVideo{
+  width: 380px;
+  border-radius: 5px;
+    transition: transform 0.3s ease-in-out; /* smooth animation */
+
+}
+.myVideo:hover {
+  transform: scale(1.05); /* zoom in 20% */
+}
+.myVideo:active {
+  transform: scale(1);
+}
+
+.videoOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8); /* transparent dark background */
+  display: none; /* hidden until click */
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* wrapper for the video */
+.videoWrapper {
+  position: relative;
+}
+
+.videoWrapper video {
+  width: 80vw;
+  height: 70vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* close button */
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: rgba(0,0,0,0.6);
+  color: rgb(228, 226, 226);
+  border: none;
+  font-size: 23px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+.closeBtn:hover {
+  background: red;
+  cursor: pointer;
+}
