@@ -60,19 +60,23 @@ p {
 
 /* MainBody Style ***********************************************************/
 .mainBody{
+  width: auto;
   margin-left: 250px;
   height: auto;
   padding: 35px;
+  padding-top: 10px;
 }
 /* Header***** */
 .headerDiv{
-  width: 100%;
+  width: auto;
   height: 50px;
   display: flex;
   justify-content: space-between;
   padding: 0 10px 0 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+}
+.menuOpt{
+  display: none;
+  align-items: center;
 }
 /* search** */
 .search-box {
@@ -81,8 +85,10 @@ p {
       border: 2px solid #696969;
       border-radius: 25px;
       padding: 5px 10px;
-      width: 400px;
+      flex: 1;
       height: 42px;
+      margin-left: 100px;
+      margin-right: 100px;
     }
 
     .search-box input {
@@ -100,7 +106,7 @@ p {
     }
 
     .search-box img {
-      width: 20px;
+      
       height: 20px;
     }
     .profileLogo img{
@@ -110,22 +116,57 @@ p {
 /* Scholars *************/
 .ScholarList{
   display: flex;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
+  
   justify-content: space-between;
   padding: 15px;
   margin-top: 10px;
 }
+
+/* Mobile Responsiveeeeeeeeeeeeeeeeeeeeee */
 @media (max-width: 800px) {
-  .ScholarList {
-    flex: 1 1 ; /* 2 columns */
+  .menuOpt{
+    display: flex;
   }
+  .search-box {
+    margin: 5px 5px 0px 5px;
+  }
+  .ScholarList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0; /* remove extra padding */
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .ScholarList div {
+    flex: 1 1 calc(50% - 20px); /* two columns */
+    margin: 10px;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    box-sizing: border-box; /* includes padding & border in width */
+  }
+  .mainSideBody{
+    display: none;
+    z-index: 999;
+    height: 100vh;
+    background-color: rgba(34, 33, 33, 0.096);
+    backdrop-filter: blur(25px);
+  }
+  .mainBody{
+  margin-left: 0px;
+  height: auto;
+  width: auto;
+  padding: 0px;
+  }
+  
 }
 
-@media (max-width: 500px) {
-  .ScholarList > div {
-    flex: 1 1 calc(100% - 10px); /* 1 column */
-  }
-}
+  
 
 .ScholarList div{
   width: 160px;
@@ -147,12 +188,13 @@ p {
 }
 
 /* Mufti Menk class*************** */
+
 .mtMenkBio{
-  height: 300px;
   display: flex;
   gap: 30px;
   padding: 10px;
   align-items: center;
+  
 }
 .mtMenkBio img{
   border-radius: 10px;
@@ -175,7 +217,7 @@ p {
 }
 /* vdoooossss********* */
 .mtMenkVdos{
-   display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 10px;
@@ -234,4 +276,305 @@ p {
 .closeBtn:hover {
   background: red;
   cursor: pointer;
+}
+@media (max-width: 800px) {
+   .menuOpt{
+    display: flex;
+  }
+  .search-box {
+    margin: 5px 5px 0px 5px;
+  }
+  .myVideo{
+    width: 100%;
+  }
+  .mtMenkBio{
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+  align-items: center;
+ }
+ .mtMenkVdos{
+  grid-template-columns: 1fr;
+    padding: 10px;
+    place-items: center;
+  
+}
+}
+
+
+/* Nasheeddclsssssssssssss */
+.nasheedheaderonly{
+  margin-left: 250px;
+  padding:15px 10px 0 10px;
+}
+.LnselcCls{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.singleNshd{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 21px;
+  overflow:hidden; 
+}
+.singleNshd h4{
+  color: white;
+  margin-bottom: 5px;
+}
+.singleNshd p{
+  color: gray;
+}
+.nshdTmb,.plyThumb{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Audio Playing Divvvvvvv */
+
+.playingDiv{
+  display: none;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 450px;
+  width: 60%;
+  height: 100px;
+  border-radius: 10px;
+  padding-left: 20px;
+  background-color: rgb(210, 210, 210);
+  z-index: 999;
+
+}
+.nashdAbout{
+  display: flex;
+  align-items: center;
+}
+.closePlydiv{
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+.closePlydiv:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: white;
+}
+.playingNasheed{
+  margin-right: 50px;
+  overflow: hidden;
+}
+.controls{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#seekBar {
+  -webkit-appearance: none; /* remove default browser style */
+  width: 500px;
+  height: 6px;
+  border-radius: 3px;
+  background: #ddd; /* fallback track color */
+  outline: none;
+}
+
+/* Track (the bar) */
+#seekBar::-webkit-slider-runnable-track {
+  height: 6px;
+  background: rgb(53, 53, 53);
+  border-radius: 3px;
+}
+
+/* Thumb (the knob) */
+#seekBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: rgb(128, 128, 128);
+  cursor: pointer;
+  margin-top: -4px; /* centers thumb vertically */
+}
+.pupl{
+    width: 30px;
+    height: 100%;
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+}
+.skipNsd{
+  width: 30px;
+}
+.playbtncls{
+  border: none;
+  background: none;
+}
+@media (max-width: 800px) {
+  .nasheedMaindBdy{
+    padding: 10px;
+  }
+  .nasheedheaderonly{
+    margin-left: 0px;
+    padding: 0;
+  }
+  .menuOpt{
+    display: flex;
+  }
+  .search-box {
+    margin: 5px 5px 0px 5px;
+  }
+  
+  .playingDiv {
+    display: none;          /* ensures it shows up properly */
+    flex-direction: column; /* stack contents vertically */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 15px;
+    left: 45px;
+    width: 80%;            /* full width on mobile */
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(210, 210, 210, 0.95);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    position: fixed;
+  }
+  .nashdAbout{
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+  .closePlydiv{
+    position: absolute;  /* ✅ change to absolute */
+    top: 10px;           /* move down a little from top edge */
+    right: 10px;   
+    margin-left: 0px;
+  }
+
+  /* Make elements inside smaller */
+  .playingDiv .plyThumb {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .playingDiv .plyingNshd,
+  .playingDiv .plyingAut {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Seek bar fits screen */
+  #seekBar {
+    width: 150%;
+  }
+
+  /* Control buttons smaller and centered */
+  .controls {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+}
+
+
+/* Foooterrrrrrrrrrrrrrrr */
+.footerBody{
+  padding: 50px;
+  width: auto;
+  height: auto;
+  background-color: black;
+  margin-left: 250px;
+  
+}
+.ftTop{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.ft{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+.footerBody a{
+  font-family: "SUSE Mono", sans-serif;
+  margin: 10px;
+  color: white;
+  font-size: 15px;
+}
+.footerBody p{
+  font-family: "SUSE Mono", sans-serif;
+  color: white;
+  font-size: 15px;
+}
+.fa-brands,.fa-solid{
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 50%;
+}
+.ftBotm {
+  display: flex;
+  flex-direction: column;   
+  gap: 10px;
+  align-items: center;      
+  justify-content: center;  
+  text-align: center;       
+  padding: 15px ;
+}
+
+.contactIcons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;                
+  margin-bottom: 10px;      
+}
+
+.contactIcons a {
+  color: #000;             
+  font-size: 20px;          
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.contactIcons a:hover {
+  transform: scale(1.1);    
+}
+
+@media (max-width: 800px) {
+  .footerBody{
+    padding: 0;
+    margin: 0;
+    
+  }
+  .ftTop{
+    padding: 0;
+ justify-content: center;  
+}
+.ftBotm{
+  padding: 0;
+  padding-bottom: 40px;
+}
+.contactIcons{
+  gap: 4px;
+}
+  
 }

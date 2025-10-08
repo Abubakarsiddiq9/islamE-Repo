@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="islamEstyle.css">
+</head>
+<body>
+    <!-- Siderrrrrr -->
+    <div class="mainSideBody" id="sidMenu">
+        <!-- logo Div-- -->
+        <div style="cursor: pointer;" onclick="window.location.href='/IslamE.html'" class="logoSection">
+            <img src="/pics/IslamElogoShort-removebg-preview.png" class="logo">
+            <img src="/pics/IslamEname-removebg-preview.png" class="logoName">
+        </div>
+        <!-- Discover Div-- -->
+         <div class="discover">
+            <p style="font-weight: bold; margin-left: 5px;">Discover</p>
+            <div>
+                <a href="islamE.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>Home</a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>Browse</a>
+            </div>
+         </div>
+         <!-- Library Div--- -->
+          <div class="library">
+            <p style="font-weight:bold; margin-left: 2px;">Library</p>
+            <div>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-320v-80h320v80H120Zm0-160v-80h480v80H120Zm0-160v-80h480v80H120Zm520 520v-320l240 160-240 160Z"/></svg>Playlists</a>
+                <a style="background-color: rgb(20, 142, 20);" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M360-120H200q-33 0-56.5-23.5T120-200v-280q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480v280q0 33-23.5 56.5T760-120H600v-320h160v-40q0-117-81.5-198.5T480-760q-117 0-198.5 81.5T200-480v40h160v320Zm-80-240h-80v160h80v-160Zm400 0v160h80v-160h-80Zm-400 0h-80 80Zm400 0h80-80Z"/></svg>Nasheeds</a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M300-80q-58 0-99-41t-41-99v-520q0-58 41-99t99-41h500v600q-25 0-42.5 17.5T740-220q0 25 17.5 42.5T800-160v80H300Zm-60-267q14-7 29-10t31-3h20v-440h-20q-25 0-42.5 17.5T240-740v393Zm160-13h320v-440H400v440Zm-160 13v-453 453Zm60 187h373q-6-14-9.5-28.5T660-220q0-16 3-31t10-29H300q-26 0-43 17.5T240-220q0 26 17 43t43 17Z"/></svg>Quran</a>
+            </div>
+          </div>
+    </div>
+    <div class="nasheedheaderonly">
+        <div class="headerDiv">
+                    <div class="menuOpt" id="menudiv"><img src="/pics/menu.png"></div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search Scholar">
+                    <button>
+                    <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="search">
+                    </button>
+                </div>
+                <div class="profileLogo">
+                    <img src="pics/defaultDp.jpg">
+                </div>
+        </div>
+    </div>
+    
+    <!-- nasheed Main Bodyyyyy -->
+     <div class="mainBody" style="background-color: rgb(52, 52, 52);">
+        <!-- Header------ -->
+         
+         <div class="nasheedMaindBdy">
+            <!-- LnSelection -->
+            <div class="LnselcCls">
+                <h1 style="color: white;">Nasheeds</h1>
+                <select style="padding: 4px;font-size: 16px;" id="nasheedLn">
+                    <option value="ArabicLn">Arabic</option>
+                    <option value="UrduLn">Urdu</option>
+                    <option value="EngLn">English</option>
+                </select>
+            </div> 
+            <hr style="margin-top: 10px;">
+            <!-- Nasheed Listtttttttttttttttttttt -->
+            <div class="nashdList">
+                <div class="singleNshd">
+                    <div style="display: flex;align-items: center;">
+                        <img src="nasheedsFld/nsdpics/images.jpeg" class="nshdTmb">
+                            <audio src="Nasheeds/The Way of The Tears Muhammad al Muqit.mp3" id="plythway" class="audios"></audio>
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <h4>The Way Of Tears</h4>
+                            <p>Muhammed Al Muqit</p>
+                        </div>
+                    </div>
+                    <img src="nasheedsFld/nsdpics/play_circleB.png" style="width: 25px;" id="py1" class="plyIcon">
+                </div>
+                <div class="singleNshd">
+                    <div style="display: flex;align-items: center;">
+                        <img src="nasheedsFld/nsdpics/download (3).jpeg" class="nshdTmb">
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <h4>Kun Anta</h4>
+                            <p>Muhammed Al Muqit</p>
+                        </div>
+                    </div>
+                    <audio src="Nasheeds/Kun-Anta.mp3" class="audios" id="plykun"></audio>
+
+                    <img src="nasheedsFld/nsdpics/play_circleB.png" style="width: 25px;" id="py2" class="plyIcon">
+                </div>
+                <div class="singleNshd">
+                    <div style="display: flex;align-items: center;">
+                        <img src="nasheedsFld/nsdpics/download (1).jpeg" class="nshdTmb">
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <h4>Ya Nabi Salam Alayka</h4>
+                            <p>Maher Zain</p>
+                        </div>
+                    </div>
+                    <audio src="Nasheeds/ya-nabi-salam-alayka.mp3" id="plyya" class="audios"></audio>
+
+                    <img src="nasheedsFld/nsdpics/play_circleB.png" style="width: 25px;" id="py3" class="plyIcon">
+                </div>
+                <div class="singleNshd">
+                    <div style="display: flex;align-items: center;">
+                        <img src="nasheedsFld/nsdpics/download (2).jpeg" class="nshdTmb">
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <h4>Rahmatun Lil’Alameen</h4>
+                            <p>Maher Zain</p>
+                        </div>
+                    </div>
+                    <audio src="Nasheeds/Rahmatun Lil Alameen Ringtone Mp3 Download Pagalworld.mp3" class="audios" id="plyrh"></audio>
+
+                    <img src="nasheedsFld/nsdpics/play_circleB.png" style="width: 25px;" id="p4" class="plyIcon">
+                </div>
+                <div class="singleNshd">
+                    <div style="display: flex;align-items: center;">
+                        <img src="nasheedsFld/nsdpics/download (4).jpeg" class="nshdTmb">
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <h4>Ya Quluban</h4>
+                            <p>Abdullah Al Sinani</p>
+                        </div>
+                    </div>
+                    <img src="nasheedsFld/nsdpics/play_circleB.png" style="width: 25px;" id="py5" class="plyIcon">
+                </div>
+                <div class="singleNshd">
+                    <div style="display: flex;align-items: center;">
+                        <img src="nasheedsFld/nsdpics/download.jpeg" class="nshdTmb">
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <h4>Rahman Ya Rahman</h4>
+                            <p>Mishary Alafasy</p>
+                        </div>
+                    </div>
+                    <img src="nasheedsFld/nsdpics/play_circleB.png" style="width: 25px;" class="plyIcon">
+                </div>
+                <div class="singleNshd">
+                    <div style="display: flex;align-items: center;">
+                        <img src="nasheedsFld/nsdpics/images (1).jpeg" class="nshdTmb">
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <h4>Ya Adheeman</h4>
+                            <p>Ahmed Bukhatir</p>
+                        </div>
+                    </div>
+                    <img src="nasheedsFld/nsdpics/play_circleB.png" style="width: 25px;" class="plyIcon">
+                </div>
+                <div class="singleNshd">
+                    <div style="display: flex;align-items: center;">
+                        <img src="nasheedsFld/nsdpics/images (2).jpeg" class="nshdTmb">
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <h4>The Beauty of Existence</h4>
+                            <p>Muhammed Al Muqit</p>
+                        </div>
+                    </div>
+                    <img src="nasheedsFld/nsdpics/play_circleB.png" style="width: 25px;" class="plyIcon">
+                </div>
+                <div class="singleNshd">
+                    <audio id="player">
+                        <source src="Nasheeds/wedding.mp3">
+                    </audio>
+                    <div style="display: flex;align-items: center;">
+                        <img src="nasheedsFld/nsdpics/wd.jpeg" class="nshdTmb">
+                        
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <h4>Wedding</h4>
+                            <p>Muhammed Al Muqit</p>
+                        </div>
+                    </div>
+                    <audio src="Nasheeds/wedding.mp3" id="plywd" class="audios"></audio>
+
+                    <img src="nasheedsFld/nsdpics/play_circleB.png" style="width: 25px;" id="py7" class="plyIcon">
+                </div>
+                <div class="singleNshd">
+                    <div style="display: flex;align-items: center;">
+                        <img src="nasheedsFld/nsdpics/download (6).jpeg" class="nshdTmb">
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <h4>I Rise</h4>
+                            <p>Muhammed Al Muqit</p>
+                        </div>
+                    </div>
+                    <img src="nasheedsFld/nsdpics/play_circleB.png" style="width: 25px;" class="plyIcon">
+                </div>
+                <div class="singleNshd">
+                    <div style="display: flex;align-items: center;">
+                        <img src="nasheedsFld/nsdpics/download (7).jpeg" class="nshdTmb">
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <h4>The Way Of Tears</h4>
+                            <p>Muhammed Al Muqit</p>
+                        </div>
+                    </div>
+                    <audio src="Nasheeds/The Way of The Tears Muhammad al Muqit.mp3" id="plythway" class="audios"></audio>
+
+                    <img src="nasheedsFld/nsdpics/play_circleB.png" style="width: 25px;" class="plyIcon">
+                </div>
+                <div class="singleNshd">
+                    <div style="display: flex;align-items: center;">
+                        <img src="nasheedsFld/nsdpics/download.jpeg" class="nshdTmb">
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <h4>Rahman Ya Rahman</h4>
+                            <p>Mishary Alafasy</p>
+                        </div>
+                    </div>
+                    <img src="nasheedsFld/nsdpics/play_circleB.png" style="width: 25px;" class="plyIcon">
+                </div>
+            </div>
+            <div class="playingDiv">
+                <div class="playingNasheed">
+                    <div class="nashdAbout">
+                        <img src="nasheedsFld/nsdpics/images.jpeg" class="plyThumb">
+                        <div style="display: inline-block;margin-left: 10px;">
+                            <!-- audioossssssssss -->
+                            <h4 class="plyingNshd" style="color: black;"></h4>
+                            <p class="plyingAut"></p>
+                        </div>
+                    </div>
+                </div>           
+                <div class="controls">
+                    <input type="range" id="seekBar" value="0" step="0.1">
+                    <div>
+                    <img src="nasheedsFld/nsdpics/skip_previous.png" class="skipNsd">
+                    <!-- <img src="nasheedsFld/nsdpics/play_circle.png" class="pupl"> -->
+                    <button id="playBtn" class="playbtncls"><img src="nasheedsFld/nsdpics/pause_circle.png" class="pupl"></button>
+                    <img src="nasheedsFld/nsdpics/skip_next.png" class="skipNsd">
+                    </div>
+                </div>
+                <button class="closePlydiv">X</button>
+
+            </div>
+         </div>
+    </div>
+<script>
+    let allAudios  = document.querySelectorAll('.audios');
+    const playIcons = document.querySelectorAll('.plyIcon');
+    let seekBar = document.getElementById("seekBar");
+    const playingDiv= document.querySelector('.playingDiv');
+    const closePlydiv=document.querySelector('.closePlydiv');
+    const playBtn=document.getElementById('playBtn');
+    let currentAudio = null; // to keep track of currently active nasheed
+
+playIcons.forEach(icon => {
+  icon.addEventListener('click', () => {
+    const parentDiv = icon.closest('.singleNshd');
+    const selectedAudio = parentDiv.querySelector('.audios');
+    const thumb = parentDiv.querySelector('.nshdTmb');
+    const playerThumb = playingDiv.querySelector('.plyThumb');
+    //  get the nasheed title and artist from the clicked div
+    const gotplyNSHD = parentDiv.querySelector('h4').innerText;
+    const gotArtist = parentDiv.querySelector('p').innerText;
+    //  select elements inside the playingDiv where you want to show name/artist
+const plyingNshd = playingDiv.querySelector('.plyingNshd');
+const plyingArtist = playingDiv.querySelector('.plyingAut');
+    // Show player divvvvvvvvvvvvvvvvvvvvvvvvv
+    playingDiv.style.display = "flex";
+    //Update player imageee
+    playerThumb.src = thumb.src;
+//  update them
+plyingNshd.innerText = gotplyNSHD;
+plyingArtist.innerText = gotArtist;
+    // If this audio is already playing → pause it
+    if (selectedAudio === currentAudio && !selectedAudio.paused) {
+      selectedAudio.pause();
+      icon.src = "nasheedsFld/nsdpics/play_circleB.png";
+      playBtn.innerHTML = `<img src="nasheedsFld/nsdpics/play_circle.png" class="pupl">`;
+      return;
+    }
+
+    // Pause and reset all other audios
+    allAudios.forEach(aud => {
+      aud.pause();
+      aud.currentTime = 0;
+    });
+    playIcons.forEach(ic => {
+      ic.src = "nasheedsFld/nsdpics/play_circleB.png";
+    });
+
+    // Set the current audio
+    currentAudio = selectedAudio;
+
+    // Play it
+    currentAudio.play();
+    icon.src = "nasheedsFld/nsdpics/pause_circleB.png";
+    playBtn.innerHTML = `<img src="nasheedsFld/nsdpics/pause_circle.png" class="pupl">`;
+
+    // Audio Controllllllllllllllllllllllllll
+    currentAudio.ontimeupdate = () => {
+      seekBar.value = (currentAudio.currentTime / currentAudio.duration) * 100;
+    };
+    seekBar.oninput = () => {
+      currentAudio.currentTime = (seekBar.value / 100) * currentAudio.duration;
+    };
+
+    // When it ends, reset
+    currentAudio.addEventListener('ended', () => {
+      icon.src = "nasheedsFld/nsdpics/play_circleB.png";
+      playBtn.innerHTML = `<img src="nasheedsFld/nsdpics/play_circle.png" class="pupl">`;
+    });
+  });
+});
+
+// Handle playBtn inside playingDiv
+playBtn.addEventListener('click', () => {
+  if (!currentAudio) return; // do nothing if no nasheed selected yet
+
+  if (currentAudio.paused) {
+    currentAudio.play();
+    playBtn.innerHTML = `<img src="nasheedsFld/nsdpics/pause_circle.png" class="pupl">`;
+  } else {
+    currentAudio.pause();
+    playBtn.innerHTML = `<img src="nasheedsFld/nsdpics/play_circle.png" class="pupl">`;
+  }
+});
+
+// Handle close button
+closePlydiv.addEventListener('click', () => {
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+  playingDiv.style.display = 'none';
+  playIcons.forEach(ic => {
+    ic.src = "nasheedsFld/nsdpics/play_circleB.png";
+  });
+  playBtn.innerHTML = `<img src="nasheedsFld/nsdpics/play_circle.png" class="pupl">`;
+});
+
+const menudiv= document.getElementById('menudiv')
+const sidMenu= document.getElementById('sidMenu');
+menudiv.addEventListener('click',()=>{
+    sidMenu.style.display='block';
+})
+// Hide sidebar if clicked outside
+document.addEventListener('click', (event) => {
+  if (window.innerWidth <= 800) { // check screen size
+    if (!sidMenu.contains(event.target) && !menudiv.contains(event.target)) {
+      sidMenu.style.display = 'none';
+    }
+  }
+});
+
+// playBtn.addEventListener('click',()=>{
+//                    if(currentAudio.paused){
+//                     currentAudio.play();
+//                    }else{
+//                     currentAudio.pause();
+//                    }
+//                 })
+
+    // audio.ontimeupdate = () => {
+    //     seekBar.value = (audio.currentTime / audio.duration) * 100;
+    // };
+    // seekBar.oninput = () => {
+    //     audio.currentTime = (seekBar.value / 100) * audio.duration;
+    // };
+
+    // // onclick show playingDivvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+    // plyIcon.forEach(icon=>{
+    //     icon.addEventListener('click',()=>{
+    //         audio.play();
+    //         playBtn.innerHTML = `<img src="nasheedsFld/nsdpics/pause_circle.png" class="pupl">`;  // play icon
+    //         playingDiv.style.display="flex";
+    //     })
+    // })
+    // closePlydiv.addEventListener('click',()=>{
+    //     audio.pause();
+    //     audio.currentTime=0;
+    //     playBtn.innerHTML = `<img src="nasheedsFld/nsdpics/play_circle.png" class="pupl">`;  // play icon
+    //     playingDiv.style.display='none';
+    // })
+</script>
+</body>
+</html>

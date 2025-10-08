@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/islamEstyle.css">
+    <link rel="stylesheet" href="mtmnk.css">
 </head>
 <body>
 
     <!-- SIDER----- -->
-<div class="mainSideBody">
+<div class="mainSideBody" id="sidMenu">
         <!-- logo Div-- -->
         <div style="cursor: pointer;" onclick="window.location.href='/IslamE.html'" class="logoSection">
             <img src="/pics/IslamElogoShort-removebg-preview.png" class="logo">
@@ -19,7 +20,7 @@
          <div class="discover">
             <p style="font-weight: bold; margin-left: 5px;">Discover</p>
             <div>
-                <a style="background-color: rgb(20, 142, 20); href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>Home</a>
+                <a style="background-color: rgb(20, 142, 20);" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>Home</a>
                 <a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>Browse</a>
             </div>
          </div>
@@ -28,14 +29,15 @@
             <p style="font-weight:bold; margin-left: 2px;">Library</p>
             <div>
                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-320v-80h320v80H120Zm0-160v-80h480v80H120Zm0-160v-80h480v80H120Zm520 520v-320l240 160-240 160Z"/></svg>Playlists</a>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M360-120H200q-33 0-56.5-23.5T120-200v-280q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480v280q0 33-23.5 56.5T760-120H600v-320h160v-40q0-117-81.5-198.5T480-760q-117 0-198.5 81.5T200-480v40h160v320Zm-80-240h-80v160h80v-160Zm400 0v160h80v-160h-80Zm-400 0h-80 80Zm400 0h80-80Z"/></svg>Nasheeds</a>
+                <a href="/nasheedE.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M360-120H200q-33 0-56.5-23.5T120-200v-280q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480v280q0 33-23.5 56.5T760-120H600v-320h160v-40q0-117-81.5-198.5T480-760q-117 0-198.5 81.5T200-480v40h160v320Zm-80-240h-80v160h80v-160Zm400 0v160h80v-160h-80Zm-400 0h-80 80Zm400 0h80-80Z"/></svg>Nasheeds</a>
                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M300-80q-58 0-99-41t-41-99v-520q0-58 41-99t99-41h500v600q-25 0-42.5 17.5T740-220q0 25 17.5 42.5T800-160v80H300Zm-60-267q14-7 29-10t31-3h20v-440h-20q-25 0-42.5 17.5T240-740v393Zm160-13h320v-440H400v440Zm-160 13v-453 453Zm60 187h373q-6-14-9.5-28.5T660-220q0-16 3-31t10-29H300q-26 0-43 17.5T240-220q0 26 17 43t43 17Z"/></svg>Quran</a>
             </div>
           </div>
-    </div>
+</div>
      <div class="mainBody">
         <!-- Header------ -->
          <div class="headerDiv">
+        <div class="menuOpt" id="menudiv"><img src="/pics/menu.png"></div>
             <div class="search-box">
                 <input type="text" placeholder="Search Scholar">
                 <button>
@@ -72,6 +74,8 @@
             <video class="myVideo" poster="/Vdos/Mufti Menk/thumbs/p8.jpeg" src="/Vdos/Mufti Menk/How, Why and When should I trust Allah_ Mufti Menk.mp4"></video>
             <video class="myVideo" poster="/Vdos/Mufti Menk/thumbs/p9.jpeg" src="/Vdos/Mufti Menk/Going back to a sin - Mufti Menk.mp4"></video>
          </div>
+         <a target="_blank" href="https://www.youtube.com/@muftimenkofficial" style="text-align: center;"><h3 style="text-decoration: underline;">More Videos</h3></a>
+
          <div class="videoOverlay" id="videoOverlay">
             <div class="videoWrapper">
                 <video style="width: 100%;" id="popupVideo" controls></video>
@@ -105,6 +109,20 @@ closeBtn.addEventListener("click", () => {
   overlay.style.display = "none"; // hide overlay
   popupVideo.removeAttribute("src"); // unload video (optional)
 });
+const menudiv= document.getElementById('menudiv')
+const sidMenu= document.getElementById('sidMenu');
+menudiv.addEventListener('click',()=>{
+    sidMenu.style.display='block';
+})
+// Hide sidebar if clicked outside
+document.addEventListener('click', (event) => {
+  if (window.innerWidth <= 800) { // check screen size
+    if (!sidMenu.contains(event.target) && !menudiv.contains(event.target)) {
+      sidMenu.style.display = 'none';
+    }
+  }
+});
      </script>
+    
 </body>
 </html>
