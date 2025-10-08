@@ -296,6 +296,22 @@ p {
   padding: 10px;
   align-items: center;
  }
+ .mtMenkBio > div {
+    display: contents; /* removes the box but keeps its children visible */
+  }
+  .mtMenkBio img {
+order: 2; 
+ }
+  .mtMenkBio h1 {
+    order: 1;                    /* show heading first */
+  }
+   .mtMenkBio p {
+    order: 3;                    /* show paragraph after image */
+  }
+
+  .mtMenkBio .mediaLinks {
+    order: 4;                    /* show links last */
+  }
  .mtMenkVdos{
   grid-template-columns: 1fr;
     padding: 10px;
