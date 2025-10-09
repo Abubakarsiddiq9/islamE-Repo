@@ -185,6 +185,92 @@ p {
 
   
 
+/* Footerrrrrrrrrrr */
 
 
+.footerBody{
+  padding: 50px;
+  width: auto;
+  height: auto;
+  background-color: black;
+  margin-left: 250px;
+  
+}
+.ftTop{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.ft{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+.footerBody a{
+  font-family: "SUSE Mono", sans-serif;
+  margin: 10px;
+  color: white;
+  font-size: 15px;
+}
+.footerBody p{
+  font-family: "SUSE Mono", sans-serif;
+  color: white;
+  font-size: 15px;
+}
+.fa-brands,.fa-solid{
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 50%;
+}
+.ftBotm {
+  display: flex;
+  flex-direction: column;   
+  gap: 10px;
+  align-items: center;      
+  justify-content: center;  
+  text-align: center;       
+  padding: 15px ;
+}
 
+.contactIcons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;                
+  margin-bottom: 10px;      
+}
+
+.contactIcons a {
+  color: #000;             
+  font-size: 20px;          
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.contactIcons a:hover {
+  transform: scale(1.1);    
+}
+
+@media (max-width: 800px) {
+  .footerBody{
+    padding: 0;
+    margin: 0;
+    
+  }
+  .ftTop{
+    padding: 0;
+ justify-content: center;  
+}
+.ftBotm{
+  padding: 0;
+  padding-bottom: 40px;
+}
+.contactIcons{
+  gap: 4px;
+}
+  
+}
